@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackEnd", "BackEnd", "{5012DB2E-53C1-4A3C-978D-52146ED4D038}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{1916CF02-AA84-48DA-B263-78B2596547E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Covid-API", "Covid-API\Covid-API.csproj", "{224B71CE-1E16-431A-B45F-A5EE6AA3A42A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Covid19", "Covid19\Covid19.csproj", "{9EEA51FE-D802-4093-AEC8-5EBF47411651}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{224B71CE-1E16-431A-B45F-A5EE6AA3A42A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224B71CE-1E16-431A-B45F-A5EE6AA3A42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{224B71CE-1E16-431A-B45F-A5EE6AA3A42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{224B71CE-1E16-431A-B45F-A5EE6AA3A42A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EEA51FE-D802-4093-AEC8-5EBF47411651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EEA51FE-D802-4093-AEC8-5EBF47411651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EEA51FE-D802-4093-AEC8-5EBF47411651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EEA51FE-D802-4093-AEC8-5EBF47411651}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{224B71CE-1E16-431A-B45F-A5EE6AA3A42A} = {5012DB2E-53C1-4A3C-978D-52146ED4D038}
+		{9EEA51FE-D802-4093-AEC8-5EBF47411651} = {1916CF02-AA84-48DA-B263-78B2596547E5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {227EC528-D0B1-4AE0-BD18-AEC8D818093A}
+	EndGlobalSection
+EndGlobal
