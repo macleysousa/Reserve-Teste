@@ -1,10 +1,30 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Covid19 - TOP 10 Países";
+    var top10 = ViewData["Top10"] as List<Models.Country_model>;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    @if (top10 != null)
+    {
+        for (int i = 0; i < top10.Count; i++)
+        {
+            <div class="card mt-2">
+                <div class="card-body flex-column d-flex">
+                    <span><b>Posição no ranking:</b> @(i + 1)º </span>
+                    <span><b>País:</b> @top10[i].country</span>
+                    <span><b>Total de casos ativos:</b> @top10[i].totalActive.ToString("N0")</span>
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="p-2 card justify-content-center">
+            <span class="text-danger">Erro ao obter dados do servidor</span>
+        </div>
+    }
+
 </div>
+

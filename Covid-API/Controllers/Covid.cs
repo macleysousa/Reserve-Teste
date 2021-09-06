@@ -35,7 +35,15 @@ namespace Covid_API.Controllers
         [HttpGet("api/covid/top10")]
         public async Task<IEnumerable<Country_model>> top10()
         {
-            return await _top10.GetAsync();
+            var top10 = await _top10.GetAsync();
+            if (top10 != null)
+            {
+                return top10;
+            }
+            else
+            {
+                return (IEnumerable<Country_model>)StatusCode(400, null);
+            }
         }
        
     }

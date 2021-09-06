@@ -19,10 +19,8 @@ namespace Covid_API.Services
 
             Covid_model total = response.Deserialize<Covid_model>();
             List<Country_model> country = total.Countries.OrderByDescending(x => x.TotalActive).ToList();
-            var top10 = country.Take(9);
+            var top10 = country.Take(10);
             return top10;
-
-
         }
     }
 }
